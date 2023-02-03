@@ -26,6 +26,13 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
+
+### Nginx
+
+You already dockerized this backend, and you are running 2 or more containers, but you want the client side to send requests to only one address?
+
+Well, for this it is necessary to use a web server like Nginx, but this needs to be configured with the [nginx.conf](https://github.com/frdlnk/ecommerce_backend_template/blob/master/nginx/conf/nginx.conf)
+
 ## Contribution
 
 If you want to contribute, open a pull request to change some code, create your branch and test all code there, then push it to master branch
